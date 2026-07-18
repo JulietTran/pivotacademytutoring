@@ -43,26 +43,28 @@ main{
     margin-bottom:60px;
 }
 
-.logo{
-    width:180px;
-    max-width:100%;
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.hero-image img{
-    width:100%;
-    border-radius:12px;
+.logo {
+    width: 180px;
+    height: auto;
+    display: block;
 }
 
-.hero-text h1{
-    font-size:2.6rem;
-    color:#0d6efd;
-    margin-bottom:15px;
+.hero-text {
+    flex: 1;
 }
 
-.hero-text h2{
-    margin-bottom:15px;
+.hero-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
 }
-
 .button{
     display:inline-block;
     margin-top:25px;
