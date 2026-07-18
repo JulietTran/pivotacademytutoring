@@ -35,36 +35,6 @@ main{
     margin:40px auto;
 }
 
-.hero{
-    display:grid;
-    grid-template-columns:1fr 2fr 1fr;
-    gap:40px;
-    align-items:center;
-    margin-bottom:60px;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 180px;
-    height: auto;
-    display: block;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-.hero-image img {
-    width: 350px;
-    max-width: 100%;
-    border-radius: 12px;
-}
 .button{
     display:inline-block;
     margin-top:25px;
@@ -127,13 +97,19 @@ p{
     text-align:center;
 }
 
+.logo{
+    margin:auto;
+}
+
+.hero-image img{
+    margin:auto;
+}
+
 nav{
     flex-direction:column;
     gap:10px;
 }
 
-.logo{
-    margin:auto;
 }
 
 }
