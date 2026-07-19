@@ -98,13 +98,20 @@ p{
 }
 
 .logo{
-    margin:auto;
+    width: 180px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.hero-text{
+    flex: 1;
 }
 
 .hero-image img{
-    margin:auto;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
 }
-
 nav{
     flex-direction:column;
     gap:10px;
