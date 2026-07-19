@@ -35,6 +35,34 @@ main{
     margin:40px auto;
 }
 
+/* Hero Section */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+    flex-shrink:0;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image img{
+    width:350px;
+    max-width:100%;
+    border-radius:12px;
+}
+
+/* Buttons */
+
 .button{
     display:inline-block;
     margin-top:25px;
@@ -50,6 +78,8 @@ main{
     background:#0b5ed7;
 }
 
+/* Cards */
+
 .card-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -63,6 +93,8 @@ main{
     border-radius:12px;
     box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
+
+/* Subjects */
 
 .subject-grid{
     display:grid;
@@ -80,6 +112,8 @@ main{
     font-weight:bold;
 }
 
+/* Typography */
+
 h1,
 h2,
 h3{
@@ -90,33 +124,28 @@ p{
     margin-bottom:15px;
 }
 
+/* Mobile */
+
 @media (max-width:768px){
 
-.hero{
-    grid-template-columns:1fr;
-    text-align:center;
-}
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
 
-.logo{
-    width: 180px;
-    height: auto;
-    flex-shrink: 0;
-}
+    .logo{
+        margin:auto;
+        width:100px;
+    }
 
-.hero-text{
-    flex: 1;
-}
+    .hero-image img{
+        width:100%;
+        max-width:350px;
+    }
 
-.hero-image img{
-    width: 350px;
-    max-width: 100%;
-    border-radius: 12px;
-}
-nav{
-    flex-direction:column;
-    gap:10px;
-}
-
-}
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
 
 }
